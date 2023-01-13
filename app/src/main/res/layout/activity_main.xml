@@ -1,148 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-    <LinearLayout
-        android:layout_marginTop="70dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="회원가입"
-            android:gravity="center"
-            android:textSize="30sp"/>
-    </LinearLayout>
+    android:layout_gravity="center"
+    android:layout_marginTop="100dp"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="40dp">
-        <TextView
-            android:id="@+id/id_Check_Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="아이디를 입력해주세요"
-            android:textSize="10sp"/>
-    </LinearLayout>
+        android:text="Login"
+        android:textSize="30sp"/>
 
     <LinearLayout
-        android:layout_marginTop="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal">
-
-
-
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ID : "-->
+<!--            android:textSize="20sp"/>-->
         <EditText
             android:id="@+id/id"
-            android:layout_width="200sp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="ID"/>
-        <Button
-            android:id="@+id/id_Check_Btn"
-            android:layout_width="100sp"
-            android:layout_height="wrap_content"
-            android:text="중복확인"/>
+            android:hint="ID"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="PW : "-->
+<!--            android:textSize="20sp"/>-->
 
         <EditText
             android:id="@+id/pw"
-            android:layout_width="300sp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="PASSWORD"
-            android:textSize="15sp"/>
+            android:hint="PW"
+            android:textSize="20sp"/>
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-        <EditText
-            android:id="@+id/pw_check"
-            android:layout_width="300sp"
-            android:layout_height="wrap_content"
-            android:hint="PASSWORD CHECK"
-            android:textSize="15sp"/>
-        <TextView
-            android:id="@+id/pw_check_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="다시한번 입력해주세요"
-            android:textSize="10sp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="10sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="300sp"
-            android:layout_height="wrap_content"
-            android:hint="NAME"
-            android:textSize="15sp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="300sp"
-            android:layout_height="wrap_content"
-            android:hint="PHONE"
-            android:textSize="15sp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        >
         <Button
-            android:id="@+id/join_Btn"
-            android:text="가입하기"
-            android:layout_width="100sp"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/cancel_Btn"
-            android:layout_marginLeft="50sp"
-            android:text="취소하기"
-            android:layout_width="100sp"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <TextView
-            android:id="@+id/msg"
+            android:id="@+id/login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:textColor="#A11414"/>
+            android:text="로그인" />
+
+        <Button
+            android:id="@+id/join_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="회원가입"/>
+
     </LinearLayout>
+
 </LinearLayout>
